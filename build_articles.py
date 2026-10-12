@@ -115,7 +115,7 @@ TOPIC_TPL = """<!DOCTYPE html>
         <div class="wx-entry-t">同一主题的新文章，会最先发在公众号</div>
         <p class="wx-entry-d">{note}</p>
       </div>
-      <a class="wx-entry-btn" href="{home}">去公众号看全部 →</a>
+      <a class="wx-entry-btn" href="{home}" target="_blank" rel="noopener">去公众号看全部 →</a>
     </div>
 
     <div class="topic-foot">
@@ -171,7 +171,7 @@ def build_content_block(data):
     lines.append('          <div class="wx-entry-t">这里的文章全部来自不倒翁梅姐的公众号，新文章会先发在公众号</div>')
     lines.append(f'          <p class="wx-entry-d">{esc(acc["note"])}</p>')
     lines.append('        </div>')
-    lines.append(f'        <a class="wx-entry-btn" href="{esc(acc["home"])}">去公众号看全部文章 →</a>')
+    lines.append(f'        <a class="wx-entry-btn" href="{esc(acc["home"])}" target="_blank" rel="noopener">去公众号看全部文章 →</a>')
     lines.append('      </div>')
     lines.append('      <div class="columns">')
     for g in data["groups"]:
@@ -233,7 +233,7 @@ def update_index(data, content_block):
         tid = CAT_ORDER[idx] if idx < len(CAT_ORDER) else CAT_ORDER[-1]
         nid = re.search(r'data-page-node-id="([^"]+)"', tag)
         nid = f' data-page-node-id="{nid.group(1)}"' if nid else ""
-        return f'{mt.group(1)}<a class="cat" href="topics/{tid}.html"{nid}>'
+        return f'{mt.group(1)}<a class="cat" href="topics/{tid}.html" target="_blank" rel="noopener"{nid}>'
 
     s, n_cat = re.subn(r"^([ ]*)<a class=\"cat\"[^>]*>", repl_cat, s, flags=re.M)
 
