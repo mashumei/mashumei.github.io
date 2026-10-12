@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>马树梅 · 鸿雁归巢 分享海报</title>
+<style>
+  :root{
+    --navy:#14253B; --navy-2:#1E3552; --gold:#C8A45C; --gold-soft:#E2C884;
+    --ink:#1A1A1A; --paper:#F7F5F0; --grey:#6B7280;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{
+    background:#2A2A2A; display:flex; justify-content:center; align-items:flex-start;
+    padding:24px 12px; font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .poster{
+    width:390px; background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);
+    border-radius:22px; overflow:hidden; position:relative; color:#fff;
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+  }
+  .poster::after{
+    content:""; position:absolute; right:-60px; top:-60px; width:200px; height:200px;
+    background:radial-gradient(circle,rgba(200,164,92,.22),transparent 70%); border-radius:50%;
+  }
+  .top-bar{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 22px 0; position:relative; z-index:2;
+  }
+  .brand{ font-size:15px; letter-spacing:3px; color:var(--gold-soft); font-weight:600; }
+  .tag{ font-size:11px; color:#AEB9C6; border:1px solid rgba(174,185,198,.4); padding:3px 9px; border-radius:20px; }
+  .hero{ text-align:center; padding:14px 22px 4px; position:relative; z-index:2; }
+  .avatar{
+    width:96px; height:96px; border-radius:50%; object-fit:cover;
+    border:3px solid var(--gold); margin:0 auto 12px; display:block;
+    box-shadow:0 6px 18px rgba(0,0,0,.35);
+  }
+  .name{ font-size:26px; font-weight:800; letter-spacing:1px; }
+  .name span{ color:var(--gold-soft); font-size:16px; font-weight:600; margin-left:6px; }
+  .role{ font-size:13px; color:#C7D0DC; margin-top:6px; letter-spacing:1px; }
+  .claim{
+    text-align:center; margin:16px 26px; padding:14px 12px;
+    border-top:1px solid rgba(200,164,92,.35); border-bottom:1px solid rgba(200,164,92,.35);
+    position:relative; z-index:2;
+  }
+  .claim .big{ font-size:21px; font-weight:800; color:#fff; letter-spacing:1px; }
+  .claim .sub{ font-size:12.5px; color:var(--gold-soft); margin-top:7px; line-height:1.6; }
+  .qr-card{
+    background:#fff; border-radius:16px; margin:18px 26px 6px; padding:18px 16px 14px;
+    text-align:center; position:relative; z-index:2;
+  }
+  .qr-card img{ width:150px; height:150px; object-fit:contain; border-radius:8px; }
+  .qr-card .tip{ font-size:13px; color:var(--navy); font-weight:700; margin-top:10px; }
+  .qr-card .wxid{ font-size:13px; color:var(--grey); margin-top:3px; }
+  .qr-card .wxid b{ color:var(--navy); }
+  .foot{
+    text-align:center; padding:14px 22px 22px; position:relative; z-index:2;
+    font-size:11px; color:#AEB9C6; line-height:1.7;
+  }
+  .foot .site{ color:var(--gold-soft); }
+  .hint{
+    width:390px; margin:14px auto 0; color:#bbb; font-size:12px; text-align:center; line-height:1.7;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div class="poster">
+      <div class="top-bar">
+        <div class="brand">鸿雁归巢</div>
+        <div class="tag">个人 AI 名片</div>
+      </div>
+
+      <div class="hero">
+        <img class="avatar" src="assets/portrait.jpg" alt="马树梅（梅子）" />
+        <div class="name">马树梅<span>梅子</span></div>
+        <div class="role">传统企业 AI 增长实践者</div>
+      </div>
+
+      <div class="claim">
+        <div class="big">经营自己，也经营企业</div>
+        <div class="sub">让值得被看见的人和企业，更容易被看见</div>
+      </div>
+
+      <div class="qr-card">
+        <img src="assets/wechat-qr.jpg" alt="马树梅微信二维码" />
+        <div class="tip">长按识别二维码，添加我的微信</div>
+        <div class="wxid">微信号：<b>yizhimei569</b></div>
+      </div>
+
+      <div class="foot">
+        线上可见性检查 · 老板 IP 与内容 · 线上获客优化<br />
+        <span class="site">个人主页即将上线，敬请关注</span>
+      </div>
+    </div>
+    <div class="hint">
+      📌 手机打开此页 → 截图保存 → 发朋友圈（配文引导扫码）<br />
+      网站部署到公网后，把"个人主页"换成真实链接即可
+    </div>
+  </div>
+</body>
+</html>
