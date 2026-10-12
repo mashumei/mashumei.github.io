@@ -20,16 +20,19 @@
 
 适合不熟悉命令行的同学。
 
+> ✅ **已为你准备好**：网站文件夹已是 git 仓库（已 `git init` + 首次提交，分支 `main`，14 个文件全部纳入）。所以你**不用**再复制文件、不用再 `git init`，直接从第 3 步"Publish"开始。
+
 1. 注册 GitHub 账号：https://github.com/ （记住用户名，链接里会用到）
 2. 下载安装 GitHub Desktop：https://desktop.github.com/
-3. 新建仓库：
-   - 仓库名**必须**填 `你的用户名.github.io`（如 `mashumei.github.io`）
-   - 选 **Public**（私有仓库 Pages 要付费）
-   - 不要勾选 "Initialize with README"（我们已有文件）
-4. 把网站文件**全部复制**进本地仓库文件夹（index.html、css、js、articles、assets、share-poster.html 都放根目录，保持现在的目录结构）
-5. GitHub Desktop 里会出现改动 → 写个摘要（如"个人名片网站上线"）→ 点 **Commit to main** → 点 **Push origin**
-6. 打开 GitHub 网页 → 进该仓库 → **Settings → Pages** → Source 选 `main` 分支 / `/root` → Save
-7. 等 1–2 分钟，访问 `https://你的用户名.github.io/` 即可。
+3. 发布本地仓库：
+   - 打开 GitHub Desktop → **File → Add Local Repository** → 选本文件夹 `E:\鸿雁归巢-运营系统\马树梅个人AI名片网站`
+   - 点 **Publish repository**（发布仓库）
+   - **Repository name 必须填** `你的用户名.github.io`（如 `mashumei.github.io`）
+   - 勾选 **Public**（私有仓库 Pages 要付费）
+   - 不要勾 "Keep this code private"
+   - 点 Publish
+4. 打开 GitHub 网页 → 进该仓库 → **Settings → Pages** → Source 选 `main` 分支 / `/root` → Save
+5. 等 1–2 分钟，访问 `https://你的用户名.github.io/` 即可。
 
 > 第一次部署可能要等几分钟才生效，刷新即可。
 

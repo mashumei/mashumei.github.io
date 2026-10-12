@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 import qrcode
 
 # ============ 可配置项（改这里即可重生成）============
-CARD_URL = "https://your-name.github.io/"   # ← 部署后替换为真实公网链接
+CARD_URL = "https://mashumei.github.io/"     # GitHub 用户页（仓库名须为 mashumei.github.io）
 AVATAR   = "assets/portrait.jpg"
 OUT      = "poster.png"
 
@@ -89,7 +89,7 @@ rrect(d, [cx0, cy0, cx0 + card_w, cy0 + card_h], 28, (255, 255, 255))
 qx = (W - qsize) // 2
 img.paste(qimg, (qx, qy))
 ctext(d, W // 2, qy + qsize + 26, "长按识别，进入我的 AI 名片", font(40, True), NAVY)
-ctext(d, W // 2, qy + qsize + 84, "个人主页即将上线", font(30), GREY)
+ctext(d, W // 2, qy + qsize + 84, "扫一扫，认识真实的我", font(30), GREY)
 
 # ---------- 底部服务 / 署名 ----------
 by = cy0 + card_h + 70

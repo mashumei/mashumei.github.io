@@ -113,7 +113,8 @@ python -m http.server 8080
 - **二维码用途**：长按识别直接进入你的 AI 名片网站，用于引流到主页；不再放微信二维码。
 - 生成脚本：`poster.py`（用 Pillow + qrcode 合成；头像取自 `assets/portrait.jpg`）。
 - 重新生成：`python poster.py`（需装了 Pillow + qrcode 的环境）。
-- ⚠️ **二维码链接配置**：脚本顶部 `CARD_URL` 目前是占位值 `https://your-name.github.io/`，**必须替换为真实公网链接后重跑**，否则扫码进不去。
+- ✅ **二维码链接已配置**：`CARD_URL = https://mashumei.github.io/`（GitHub 用户页）。网站发布上线后扫码即达；若日后更换域名，改 `poster.py` 顶部的 `CARD_URL` 再重跑即可。
+- **独立二维码图**：`qr.png`（指向同一链接，带"马树梅 · 鸿雁归巢 AI 名片"文字），生成脚本 `make_qr.py`，可嵌入公众号文章 / 纸质名片 / PPT 等。
 - 网页版海报：`share-poster.html`（手机打开此页可直接截图）。
 
 ---
