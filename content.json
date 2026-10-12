@@ -1,0 +1,102 @@
+{
+  "_说明": "网站文章数据源。新增文章只需在 articles 里加一条（title/url/date/topics），然后运行 python build_articles.py 重新生成栏目页与首页内容中心。",
+  "account": {
+    "label": "我的公众号",
+    "biz": "MzYyMjEyNDk5MQ==",
+    "home": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzYyMjEyNDk5MQ==&scene=124#wechat_redirect",
+    "note": "全部文章都在公众号，建议在微信中打开；若打不开，可在微信里搜索我的公众号名称。"
+  },
+  "topics": [
+    {
+      "id": "body",
+      "name": "晨跑与身体管理",
+      "tag": "晨跑 · 身体管理",
+      "desc": "8 年晨跑、规律作息。我用数据管理身体，而不是靠感觉。这里记录运动、作息和状态管理的真实做法。"
+    },
+    {
+      "id": "women",
+      "name": "40+ 女性的自我成长",
+      "tag": "40+ · 自我成长",
+      "desc": "40 岁以后，怎样重新认识自己、拿回生活的主动权。这里写一个 40+ 女性的自我成长。"
+    },
+    {
+      "id": "business",
+      "name": "创业者的真实思考",
+      "tag": "创业 · 经营",
+      "desc": "17 年经营路上，我踩过的坑和想明白的事。这里记录创业与经营的真实思考。"
+    },
+    {
+      "id": "ai",
+      "name": "AI 时代的学习与实践",
+      "tag": "AI · 学习实践",
+      "desc": "一个创业 17 年的人，怎么重新学习新工具和新表达。这里记录我在 AI 时代的实践。"
+    }
+  ],
+  "groups": [
+    {
+      "title": "A. AI时代企业增长",
+      "sub": "传统企业如何被客户看见",
+      "topics": ["ai"]
+    },
+    {
+      "title": "B. 创业经历与经营思考",
+      "sub": "我的真实创业路",
+      "topics": ["business"]
+    },
+    {
+      "title": "C. 身体管理与个人成长",
+      "sub": "经营自己的日常",
+      "topics": ["body", "women"]
+    }
+  ],
+  "articles": [
+    {
+      "title": "从SEO到AI，企业获客逻辑完全变了",
+      "url": "https://mp.weixin.qq.com/s/92NbD6lRqjwZxN7_YNEbHQ",
+      "date": "2026-10-09",
+      "topics": ["ai"]
+    },
+    {
+      "title": "40+的女人，我们该醒醒了！！！",
+      "url": "https://mp.weixin.qq.com/s/Tj_J6xB3-x0ez4wkoviQFA",
+      "date": "2026-10-04",
+      "topics": ["women"]
+    },
+    {
+      "title": "AI时代，传统企业到底该改变什么？",
+      "url": "https://mp.weixin.qq.com/s/xrPaQ76OfarnJ9nK1SHZkA",
+      "date": "2026-09-11",
+      "topics": ["ai"]
+    },
+    {
+      "title": "被女儿狠狠打了一巴掌",
+      "url": "https://mp.weixin.qq.com/s/Rh1t7fnm-s9eUmsGE3-6QA",
+      "date": "2026-09-02",
+      "topics": ["women"]
+    },
+    {
+      "title": "创业17年后，我终于懂了成长的意义！！！",
+      "url": "https://mp.weixin.qq.com/s/MUSoIHmEx7bsZX3C8BQXHQ",
+      "date": "2026-08-10",
+      "topics": ["business"]
+    },
+    {
+      "title": "晨跑2497天后终于明白：改变人生的不是自律",
+      "url": "https://mp.weixin.qq.com/s/ZZjlqcG7FWSL5L5PwgGHZw",
+      "date": "2026-07-25",
+      "topics": ["body"]
+    },
+    {
+      "title": "致呼和浩特家长的一封信：如果只能送孩子一件礼物，我愿是「跑不垮的身体」和「压不弯的心态」",
+      "url": "https://mp.weixin.qq.com/s/bvJH85gjse3tkl5QLaJDag",
+      "date": "2026-04-29",
+      "topics": ["body"]
+    },
+    {
+      "title": "八年前我为了自救开始跑步，现在成了我的底气",
+      "url": "https://mp.weixin.qq.com/s/5XLq7UyTrB4CAUP1ELda1Q",
+      "date": "2025-11-17",
+      "topics": ["body"]
+    }
+  ]
+}

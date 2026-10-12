@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 import qrcode
 
 # ============ 可配置项（改这里即可重生成）============
-CARD_URL = "https://mashumei.github.io/?v=2"  # ?v=2 防微信缓存旧卡片页；改版时升 v=3 即可
+CARD_URL = "https://mashumei.github.io/?v=3"  # ?v=3 防微信缓存旧卡片页；下次改版升 v=4 即可
 AVATAR   = "assets/portrait.jpg"
 OUT      = "poster.png"
 

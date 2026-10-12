@@ -3,7 +3,7 @@
 import qrcode
 from PIL import Image, ImageDraw, ImageFont
 
-URL = "https://mashumei.github.io/?v=2"   # ← 与 poster.py 的 CARD_URL 保持一致（?v=2 防微信缓存）
+URL = "https://mashumei.github.io/?v=3"   # ← 与 poster.py 的 CARD_URL 保持一致（?v=3 防微信缓存）
 
 qr = qrcode.QRCode(box_size=12, border=4,
                    error_correction=qrcode.constants.ERROR_CORRECT_M)

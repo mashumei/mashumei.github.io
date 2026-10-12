@@ -8,7 +8,7 @@
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 import qrcode, os
 
-CARD_URL = "https://mashumei.github.io/?v=2"
+CARD_URL = "https://mashumei.github.io/?v=3"
 AVATAR   = "assets/portrait.jpg"
 W, H     = 1080, 1920
 

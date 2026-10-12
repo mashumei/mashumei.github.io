@@ -625,3 +625,126 @@ section {
   display: block;
   border-radius: 8px;
 }
+
+/* =========================================================
+   补充：内容中心「公众号入口卡」+ 个人成长栏目页（topics/）
+   ========================================================= */
+
+.wx-entry {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  margin: 0 0 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow-soft);
+}
+.wx-entry .wx-entry-k {
+  font-size: 12px;
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.wx-entry .wx-entry-t {
+  font-size: 17px;
+  color: var(--navy);
+  font-weight: 700;
+  margin: 6px 0 8px;
+  line-height: 1.5;
+}
+.wx-entry .wx-entry-d {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.wx-entry-btn {
+  align-self: flex-start;
+  display: inline-block;
+  background: var(--navy);
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background .2s ease, color .2s ease;
+}
+.wx-entry-btn:hover { background: var(--gold); color: var(--navy-deep) !important; }
+
+/* 栏目页 */
+.topic-topbar {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+.topic-topbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+}
+.topic-topbar .brand {
+  color: var(--navy);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topic-topbar .nav-back {
+  color: var(--muted);
+  font-size: 13.5px;
+  text-decoration: none;
+}
+.topic-topbar .nav-back:hover { color: var(--gold); }
+
+.topic-page { padding: 34px 0 66px; }
+.topic-page .back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+.topic-page .back:hover { color: var(--gold); }
+.topic-title {
+  font-size: 27px;
+  line-height: 1.35;
+  margin: 10px 0 12px;
+  color: var(--navy);
+}
+.topic-desc {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0 0 12px;
+  max-width: 720px;
+}
+.topic-count {
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+.topic-list { margin-bottom: 30px; }
+.topic-foot { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 34px; }
+
+@media (min-width: 768px) {
+  .wx-entry {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 26px;
+  }
+  .wx-entry .wx-entry-main { max-width: 640px; }
+  .topic-title { font-size: 34px; }
+}
+

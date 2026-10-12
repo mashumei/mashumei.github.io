@@ -1,0 +1,9 @@
+# 临时文件
+.tmpcheck/
+__pycache__/
+*.pyc
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
