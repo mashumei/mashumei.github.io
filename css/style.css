@@ -399,11 +399,20 @@ section {
   gap: 14px;
 }
 .cat {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   padding: 20px 18px;
   box-shadow: var(--shadow-soft);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.cat:hover, .cat:active {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(15, 28, 54, .12);
+  border-color: var(--gold);
 }
 .cat .tag {
   font-size: 12px;
@@ -413,6 +422,8 @@ section {
 }
 .cat h4 { margin: 8px 0 8px; font-size: 16px; color: var(--navy); }
 .cat p { margin: 0; font-size: 13.5px; color: var(--muted); }
+.cat-more { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 700; color: var(--navy); }
+.cat:hover .cat-more { color: var(--gold); }
 
 .growth-note {
   margin-top: 26px;
