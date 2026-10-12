@@ -117,6 +117,20 @@ python -m http.server 8080
 - **独立二维码图**：`qr.png`（指向同一链接，带"马树梅 · 鸿雁归巢 AI 名片"文字），生成脚本 `make_qr.py`，可嵌入公众号文章 / 纸质名片 / PPT 等。
 - 网页版海报：`share-poster.html`（手机打开此页可直接截图）。
 
+### 推广海报全套（`posters/`，批量生成）
+- 按名片内容拆出 **6 个推广角度**，同一品牌模板，二维码均指向 `https://mashumei.github.io/`：
+  | 文件 | 角度 | 建议用途 |
+  |---|---|---|
+  | `posters/01-main.png` | 综合主海报（经营自己，也经营企业） | 朋友圈 / 通用 |
+  | `posters/02-enterprise.png` | 企业服务（企业有好产品，却不容易被看见？） | 老板群 / 商会 / 线下 |
+  | `posters/03-ip.png` | 老板 IP 与 AI 内容 | 想做个人 IP 的老板 |
+  | `posters/04-growth.png` | 40+ 女性自我成长 | 女性社群 / 运动健康圈 |
+  | `posters/05-story.png` | 创业经历（2009 创业 → 2026 再出发） | 建立信任 / 个人故事 |
+  | `posters/06-method.png` | 我的工作方法（不讲空话，从真实问题开始） | 专业感 / 服务说明 |
+- **画廊预览页**：`posters.html`（手机或浏览器打开，可逐张长按保存）。
+- 生成脚本：`batch_posters.py`（改 `THEMES` 列表里的 `tag/head/sub/cta` 即可增删或改文案，重跑 `python batch_posters.py`）。
+- 主海报 `poster.png` 会随脚本一并刷新为「① 综合主海报」。
+
 ---
 
 ## 七、设计说明

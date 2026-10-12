@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>推广海报 · 马树梅 AI 名片</title>
+<style>
+  :root{
+    --navy:#0F1C36; --navy2:#16284A; --gold:#C8A45C; --gold-s:#D6B878;
+    --white:#F5F7FA; --grey:#A5B2C6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--navy); color:var(--white);
+    font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;
+  }
+  header{
+    max-width:1080px; margin:0 auto; padding:48px 20px 8px; text-align:center;
+  }
+  header .tag{
+    display:inline-block; color:var(--gold); font-size:14px; letter-spacing:2px;
+    border:1px solid rgba(200,164,92,.5); border-radius:999px; padding:6px 16px;
+  }
+  header h1{ font-size:30px; margin:20px 0 10px; }
+  header p{ color:var(--grey); font-size:15px; line-height:1.7; margin:0; }
+  .grid{
+    max-width:1180px; margin:36px auto 80px; padding:0 20px;
+    display:grid; gap:28px; grid-template-columns:1fr;
+  }
+  @media(min-width:760px){ .grid{ grid-template-columns:1fr 1fr; } }
+  @media(min-width:1100px){ .grid{ grid-template-columns:1fr 1fr 1fr; } }
+  .card{
+    background:var(--navy2); border:1px solid rgba(200,164,92,.18);
+    border-radius:18px; overflow:hidden; display:flex; flex-direction:column;
+  }
+  .card img{ width:100%; display:block; }
+  .meta{ padding:18px 20px 22px; }
+  .meta h3{ margin:0 0 8px; font-size:17px; color:var(--white); }
+  .meta .use{ color:var(--gold-s); font-size:13px; margin:0 0 8px; }
+  .meta .desc{ color:var(--grey); font-size:13.5px; line-height:1.7; margin:0; }
+  .meta .file{ margin-top:12px; font-size:12px; color:#7C8CA6; font-family:Consolas,monospace; }
+  footer{
+    text-align:center; color:var(--grey); font-size:13px; padding:0 20px 60px; line-height:1.8;
+  }
+  footer b{ color:var(--gold); }
+</style>
+</head>
+<body>
+<header>
+  <span class="tag">推广海报 · 一整套</span>
+  <h1>马树梅 AI 名片 · 6 个推广角度</h1>
+  <p>
+    同一品牌模板，按名片内容拆成 6 张海报。<br />
+    每张右下角的二维码都指向 <b style="color:#D6B878">https://mashumei.github.io/</b>，长按识别直达 AI 名片主页。
+  </p>
+</header>
+
+<div class="grid">
+  <div class="card">
+    <img src="posters/01-main.png" alt="主海报" />
+    <div class="meta">
+      <h3>① 综合主海报</h3>
+      <p class="use">用途：朋友圈 / 微信 / 通用名片</p>
+      <p class="desc">万金油版。"经营自己，也经营企业"，谁看到都能快速认识你。</p>
+      <div class="file">posters/01-main.png</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="posters/02-enterprise.png" alt="企业服务" />
+    <div class="meta">
+      <h3>② 企业服务</h3>
+      <p class="use">用途：企业老板群 / 商会 / 线下</p>
+      <p class="desc">"企业有好产品，却不容易被看见？"直接戳传统企业老板的痛点。</p>
+      <div class="file">posters/02-enterprise.png</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="posters/03-ip.png" alt="老板IP" />
+    <div class="meta">
+      <h3>③ 老板 IP 与 AI 内容</h3>
+      <p class="use">用途：想做个人 IP 的老板</p>
+      <p class="desc">针对"想做 IP 但不知从哪开始"的老板，给出定位/选题/工作流/复盘四条线。</p>
+      <div class="file">posters/03-ip.png</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="posters/04-growth.png" alt="女性成长" />
+    <div class="meta">
+      <h3>④ 40+ 女性自我成长</h3>
+      <p class="use">用途：女性社群 / 运动健康圈</p>
+      <p class="desc">"经营自己"这条线：晨跑、身体管理、40+ 的自我认识，温暖不焦虑。</p>
+      <div class="file">posters/04-growth.png</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="posters/05-story.png" alt="创业经历" />
+    <div class="meta">
+      <h3>⑤ 创业经历</h3>
+      <p class="use">用途：建立信任 / 个人故事传播</p>
+      <p class="desc">"2009 创业 → 2026 再出发"，用真实经历建立可信度，不吹不夸。</p>
+      <div class="file">posters/05-story.png</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="posters/06-method.png" alt="工作方法" />
+    <div class="meta">
+      <h3>⑥ 我的工作方法</h3>
+      <p class="use">用途：专业感 / 服务说明</p>
+      <p class="desc">"不讲空话，从真实问题开始"——现状→问题→方案→行动→观察五步法。</p>
+      <div class="file">posters/06-method.png</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <b>怎么用：</b>手机打开本页 → 长按任意一张海报 → 保存到相册 → 发朋友圈 / 社群 / 私聊。<br />
+  想改文案或配色：编辑 <b>batch_posters.py</b> 里的 THEMES 重新运行即可。
+</footer>
+</body>
+</html>
