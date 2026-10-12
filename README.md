@@ -13,10 +13,10 @@ E:\鸿雁归巢-运营系统\马树梅个人AI名片网站\
 ├── index.html                  首页（七个板块，单页锚点）
 ├── css/style.css               样式系统（配色/排版/手机适配）
 ├── js/main.js                  交互（移动端菜单、导航高亮、复制/拨号占位拦截）
-├── articles/                   文章详情页
-│   ├── ai-growth-01.html       AI时代企业增长（示例）
-│   ├── business-thinking-01.html 创业经历与经营思考（示例）
-│   └── self-growth-01.html     身体管理与个人成长（示例）
+├── articles/                   文章详情页（3 栏目 × 3 篇 = 9 篇）
+│   ├── ai-growth-01 ~ 03.html          A. AI时代企业增长
+│   ├── business-thinking-01 ~ 03.html  B. 创业经历与经营思考
+│   └── self-growth-01 ~ 03.html        C. 身体管理与个人成长
 ├── assets/                     真实图片（portrait.jpg 头像 / wechat-qr.jpg 二维码）
 └── README.md                   本说明
 ```
@@ -82,10 +82,13 @@ python -m http.server 8080
 
 ## 五、如何新增文章
 
-1. 复制 `articles/ai-growth-01.html` 重命名为 `articles/你的文章.html`。
+> 当前已有 9 篇真实内容（每栏目 3 篇），均为「原创 · 马树梅」，可直接沿用或继续扩充。
+
+1. 复制任意一篇（如 `articles/ai-growth-01.html`）重命名为 `articles/你的文章.html`。
 2. 改 `<title>`、`.cat-tag`、`<h1>`、`.meta` 与 `.article-body` 正文。
-3. 删除正文里的 `<div class="demo-badge">示例文章…</div>` 与 `.placeholder-note` 提示框（真实文章不需要）。
+3. 若有不需要的提示块（如 `.demo-badge`），按需删改。
 4. 回到 `index.html` 的 `<!-- 6. 内容中心 -->`，复制一个 `.article-card` 并改标题、日期与 `href` 指向新文件。
+5. 如要挂到「个人成长」板块的卡片上，改对应 `<a class="cat" href="...">` 的链接即可。
 
 ---
 
