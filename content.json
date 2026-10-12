@@ -1,10 +1,10 @@
 {
   "_说明": "网站文章数据源。新增文章只需在 articles 里加一条（title/url/date/topics），然后运行 python build_articles.py 重新生成栏目页与首页内容中心。",
   "account": {
-    "label": "我的公众号",
+    "label": "不倒翁梅姐",
     "biz": "MzYyMjEyNDk5MQ==",
     "home": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzYyMjEyNDk5MQ==&scene=124#wechat_redirect",
-    "note": "全部文章都在公众号，建议在微信中打开；若打不开，可在微信里搜索我的公众号名称。"
+    "note": "全部文章都在公众号「不倒翁梅姐」，建议在微信中打开；若打不开，可在微信里搜索「不倒翁梅姐」。"
   },
   "topics": [
     {

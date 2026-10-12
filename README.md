@@ -73,7 +73,7 @@ python -m http.server 8080
 - **微信号**：yizhimei569，已显示在联系区（微信条目），并提供"复制微信号"按钮。
 - **邮箱**：1006715136@qq.com，已显示在联系区，并提供"发送邮件"按钮（mailto 直链）。
 - **视频号**：https://weixin.qq.com/sph/AZJTYVi9wF，已在"其他平台"放可点链接。
-- **公众号贴图号**：https://mp.weixin.qq.com/s/92NbD6IRqjwZxN7_YNEbHQ，已在"其他平台"放可点链接（已替代原小红书链接）。
+- **公众号「不倒翁梅姐」**：https://mp.weixin.qq.com/s/92NbD6lRqjwZxN7_YNEbHQ，已在"其他平台"放可点链接（已替代原小红书链接）。
 
 ### ⏳ 仍待补充（可选）
 - 所有核心联系方式均已填好，暂无强制待补项。如需补充公众号、知乎、B站等其他平台，照"其他平台"格式加链接即可。

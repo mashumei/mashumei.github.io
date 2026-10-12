@@ -111,7 +111,7 @@ TOPIC_TPL = """<!DOCTYPE html>
 
     <div class="wx-entry">
       <div class="wx-entry-main">
-        <div class="wx-entry-k">我的公众号</div>
+        <div class="wx-entry-k">不倒翁梅姐</div>
         <div class="wx-entry-t">同一主题的新文章，会最先发在公众号</div>
         <p class="wx-entry-d">{note}</p>
       </div>
@@ -167,8 +167,8 @@ def build_content_block(data):
     lines = []
     lines.append('      <div class="wx-entry">')
     lines.append('        <div class="wx-entry-main">')
-    lines.append(f'          <div class="wx-entry-k">{esc(acc["label"])} · 贴图号</div>')
-    lines.append('          <div class="wx-entry-t">这里的文章全部来自我的公众号，新文章会先发在公众号</div>')
+    lines.append(f'          <div class="wx-entry-k">{esc(acc["label"])}</div>')
+    lines.append('          <div class="wx-entry-t">这里的文章全部来自不倒翁梅姐的公众号，新文章会先发在公众号</div>')
     lines.append(f'          <p class="wx-entry-d">{esc(acc["note"])}</p>')
     lines.append('        </div>')
     lines.append(f'        <a class="wx-entry-btn" href="{esc(acc["home"])}">去公众号看全部文章 →</a>')
@@ -255,7 +255,7 @@ def update_index(data, content_block):
     # 4) 内容中心副文案
     s = s.replace(
         "这里记录我对企业增长、创业经营和个人成长的思考与实践，会持续更新。点击卡片即可阅读。",
-        "以下是我的公众号文章，按主题分成三组，会持续更新。点击卡片即可到公众号阅读原文。",
+        "以下是不倒翁梅姐的公众号文章，按主题分成三组，会持续更新。点击卡片即可到公众号阅读原文。",
     )
 
     with open(INDEX_FILE, "w", encoding="utf-8", newline="\n") as f:
